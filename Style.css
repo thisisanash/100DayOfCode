@@ -1,0 +1,153 @@
+/* 
+--------------------
+    Fonts
+--------------------
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 
+--------------------
+    Veriable
+--------------------
+*/
+
+:root {
+  /* Primery Color */
+  --primery-clr: #01a1a1;
+
+  /* Font */
+  --ff: "Poppins", sans-serif;
+  --f-clr: #002f2f;
+
+  /* Background Color */
+  --bg-clr: #ffffff;
+
+  --black-clr: #222;
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+--------------------
+    Global Style  
+--------------------
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 0.5px solid #80808080; */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--ff);
+}
+
+.navbar {
+  width: 100vw;
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  background-color: var(--bg-clr);
+  box-shadow: var(--dark-shadow);
+}
+
+.navbar .nav-center {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
+  max-width: var(--fixed-width);
+}
+
+.navbar .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primery-clr);
+  letter-spacing: var(--spacing);
+}
+.navbar .links {
+  display: flex;
+  align-items: center;
+}
+.navbar .links a {
+  font-size: 1rem;
+  color: var(--f-clr);
+  text-decoration: none;
+  margin-right: 1rem;
+  border: 0px;
+}
+.navbar .links a:hover {
+  color: var(--primery-clr);
+}
+.navbar .links a:visited {
+  color: var(--f-clr);
+}
+
+.main {
+  width: 100vw;
+  height: calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  background: var(--black-clr);
+  color: var(--bg-clr);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+}
+.main h1 span{
+    color: var(--primery-clr);
+    text-transform: capitalize;
+}
+
+.main button {
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  background: transparent;
+  letter-spacing: var(--spacing);
+  padding: 16px;
+  border: 2px solid var(--black-clr);
+  transition: var(--transition);
+}
+
+.main button:hover {
+  color: var(--bg-clr);
+  opacity: 0.9;
+  background-color: var(--black-clr);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+footer a{
+    padding: 10px;
+    font-size: 0.75rem;
+    border-radius: var(--radius) var(--radius) 0 0 ;
+    border: 1px solid var(--black-clr);
+    color: var(--primery-clr);
+    background-color: var(--bg-clr);
+}
+
