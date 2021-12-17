@@ -140,7 +140,7 @@ footer {
   bottom: 0;
   width: 100vw;
   text-align: center;
-}
+}s
 
 footer a{
     padding: 10px;
@@ -150,4 +150,3 @@ footer a{
     color: var(--primery-clr);
     background-color: var(--bg-clr);
 }
-
